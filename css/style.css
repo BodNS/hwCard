@@ -12,6 +12,7 @@ body {
   border: 20px solid rgba(238, 238, 238, 0.8);
   width: 400px;
   height: 440px;
+  overflow: hidden;
   position: absolute;
   top: 50%;
   margin-top: -220px;
