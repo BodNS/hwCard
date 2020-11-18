@@ -3,13 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  position: relative;
+  height: 100vh;
+}
+
 .userCard {
-  border: 15px solid rgba(238, 238, 238, 0.8);
+  border: 20px solid rgba(238, 238, 238, 0.8);
   width: 400px;
   height: 440px;
+  position: absolute;
+  top: 50%;
+  margin-top: -220px;
+  left: 50%;
+  margin-left: -200px;
 }
 .userFotoNameProf {
-  padding-top: 30px;
+  margin-top: 40px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(238, 238, 238, 0.8);
 }
@@ -21,7 +31,6 @@
 }
 .userImg img {
   border-radius: 50%;
-
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -34,6 +43,7 @@
   font-size: 14;
   font-weight: bold;
   margin: 5px;
+  margin-top: 10px;
   color: rgba(106, 106, 104, 1);
 }
 .userProf {
@@ -66,3 +76,4 @@
   font-size: 12;
   color: rgba(106, 106, 104, 1);
 }
+/* в данном примере классы userEmail, userPhone, userAdress оптимальнее было заменить одним */
