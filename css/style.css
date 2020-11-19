@@ -4,20 +4,33 @@
   box-sizing: border-box;
 }
 body {
-  position: relative;
+  /*position: relative;
+  height: 100vh;*/
+}
+.outer::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.outer {
+  text-align: center;
   height: 100vh;
 }
-
 .userCard {
   border: 20px solid rgba(238, 238, 238, 0.8);
   width: 400px;
   height: 440px;
   overflow: hidden;
-  position: absolute;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  /*position: absolute;
   top: 50%;
   margin-top: -220px;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -200px;*/
 }
 .userFotoNameProf {
   margin-top: 40px;
